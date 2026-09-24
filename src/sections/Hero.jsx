@@ -8,7 +8,7 @@ export default function Hero() {
     <section
       id="top"
       aria-label="Introduction &amp; Hero"
-      className="relative min-h-[calc(100vh-65px)] border-b border-norse/30 px-4 sm:px-8 lg:px-12 py-8 sm:py-12 flex flex-col justify-between overflow-hidden"
+      className="relative min-h-[calc(100vh-60px)] min-h-[calc(100svh-60px)] border-b border-norse/30 px-4 sm:px-8 lg:px-12 pt-3 sm:pt-4 pb-3 sm:pb-4 flex flex-col justify-between overflow-hidden"
     >
       {/* Editorial registration cross marks in corners */}
       <span aria-hidden="true" className="absolute top-2 left-3 select-none font-mono text-xs text-norse/40">
@@ -25,7 +25,7 @@ export default function Hero() {
       </span>
 
       {/* Top Technical Metadata Bar */}
-      <div className="w-full border-b border-norse/25 pb-3">
+      <div className="w-full border-b border-norse/25 pb-2.5 sm:pb-3">
         <div className="flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] sm:text-xs uppercase tracking-wider text-norse">
           <div className="flex items-center gap-3 anim-entrance">
             <span className="inline-block h-2 w-2 bg-pumpkin"></span>
@@ -43,51 +43,51 @@ export default function Hero() {
       </div>
 
       {/* Main Asymmetric Composition */}
-      <div className="my-auto py-8 sm:py-12">
-        {/* On mobile: Flex column with explicit order. On desktop: 12-column asymmetric grid (approx 58% left / 42% right) */}
-        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
+      <div className="flex-1 pt-3 sm:pt-4 lg:pt-5 pb-3 sm:pb-4">
+        {/* On mobile: Flex column with explicit order. On desktop: 2-track asymmetric grid (minmax(0,1fr) left / auto right) */}
+        <div className="flex flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-10 xl:gap-12 2xl:gap-16 lg:items-start">
           
           {/* ========================================================
-              LEFT COLUMN (58% / 7 cols on desktop)
+              LEFT COLUMN (65–70% on desktop — open, wide & stretched)
              ======================================================== */}
-          <div className="contents lg:block lg:col-span-7">
+          <div className="contents lg:block min-w-0">
             
-            {/* 1. Name */}
-            <div className="order-1 anim-entrance">
-              <h1 className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[6.75rem] xl:text-[7.5rem] tracking-tight text-pumpkin uppercase leading-[0.86] select-none">
+            {/* 1. Name — Enlarged dominant poster typography */}
+            <div className="order-1 w-full min-w-0 anim-entrance">
+              <h1 className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[clamp(6.5rem,7.8vw,8.5rem)] xl:text-[clamp(7.5rem,8.6vw,10.5rem)] 2xl:text-[clamp(9rem,9.8vw,12rem)] tracking-tight text-pumpkin uppercase leading-[0.84] select-none">
                 MANUTH<br />WILEGODA
               </h1>
             </div>
 
-            {/* 2. Main Statement */}
-            <div className="order-2 mt-6 sm:mt-8 anim-entrance anim-delay-1">
-              <div className="relative border-l-2 border-pumpkin pl-4 sm:pl-6 py-1">
-                <p className="font-heading text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tight text-paper leading-[1.05]">
+            {/* 2. Main Statement — Stays on a single line on desktop, extending towards portrait */}
+            <div className="order-2 w-full min-w-0 mt-6 sm:mt-7 lg:mt-7 xl:mt-8 anim-entrance anim-delay-1">
+              <div className="relative border-l-2 border-pumpkin pl-4 sm:pl-5 py-0.5">
+                <p className="font-heading text-lg sm:text-xl lg:text-[clamp(1.35rem,1.85vw,1.68rem)] xl:text-[clamp(1.8rem,2.28vw,2.35rem)] 2xl:text-[clamp(2.45rem,2.65vw,3.15rem)] tracking-tight text-paper uppercase leading-tight whitespace-normal lg:whitespace-nowrap break-words">
                   I build practical software and turn ideas into working systems.
                 </p>
               </div>
             </div>
 
-            {/* 3. Role Metadata */}
-            <div className="order-3 mt-6 sm:mt-8 anim-entrance anim-delay-2">
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3 font-mono text-xs uppercase tracking-wider">
-                <span className="border border-norse/50 px-2.5 py-1 text-norse bg-norse/5">
+            {/* 3. Role Metadata — Elevated visual presence with square technical containers */}
+            <div className="order-3 w-full min-w-0 mt-6 sm:mt-7 lg:mt-8 xl:mt-9 anim-entrance anim-delay-2">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-5 font-mono text-[11px] sm:text-[13px] lg:text-sm uppercase tracking-wider">
+                <span className="border border-norse/60 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 text-norse bg-norse/5">
                   Computer Science Undergraduate
                 </span>
-                <span className="border border-norse/30 px-2.5 py-1 text-paper/70">
+                <span className="border border-norse/40 px-3 sm:px-4 lg:px-5 py-1.5 sm:py-2 text-paper/85 bg-poseidon/60">
                   Software Engineering / Cloud &amp; DevOps
                 </span>
               </div>
             </div>
 
-            {/* 5. Supporting Copy & CTAs (placed under portrait on mobile via order-5) */}
-            <div className="order-5 mt-8 sm:mt-10 space-y-6 anim-entrance anim-delay-3">
-              <p className="max-w-xl font-mono text-xs sm:text-sm leading-relaxed text-paper/85">
+            {/* 5. Supporting Copy & CTAs — Stretched horizontal width & confident vertical rhythm */}
+            <div className="order-5 w-full min-w-0 mt-7 sm:mt-8 lg:mt-9 xl:mt-10 anim-entrance anim-delay-3">
+              <p className="max-w-none xl:max-w-5xl font-mono text-xs sm:text-sm lg:text-[15px] leading-relaxed text-paper/85">
                 Interested in software engineering, distributed systems, cloud infrastructure and DevOps.
               </p>
 
               {/* Editorial CTAs - directional marks and text links */}
-              <div className="flex flex-wrap items-center gap-6 pt-2 font-mono text-xs sm:text-sm uppercase tracking-wider">
+              <div className="flex flex-wrap items-center gap-6 sm:gap-8 pt-6 sm:pt-7 lg:pt-8 font-mono text-xs sm:text-sm lg:text-[15px] uppercase tracking-wider">
                 <a
                   href="#work"
                   className="group inline-flex items-center gap-2 border-b-2 border-pumpkin pb-1 text-paper hover:text-pumpkin transition-colors focus-visible:outline-2 focus-visible:outline-pumpkin focus-visible:outline-offset-4"
@@ -119,15 +119,15 @@ export default function Hero() {
           </div>
 
           {/* ========================================================
-              RIGHT COLUMN / PORTRAIT (42% / 5 cols on desktop, order-4 on mobile)
+              RIGHT COLUMN / PORTRAIT (30–35% on desktop, order-4 on mobile)
              ======================================================== */}
-          <div className="order-4 mt-10 lg:mt-0 lg:col-span-5 anim-fade anim-delay-2">
-            <div className="group relative mx-auto w-full max-w-[310px] sm:max-w-md lg:max-w-none pr-3 sm:pr-4 pt-3 sm:pt-4">
+          <div className="order-4 mt-8 lg:mt-0 shrink-0 anim-fade anim-delay-2">
+            <div className="group relative mx-auto lg:mr-0 w-full max-w-[270px] sm:max-w-sm lg:max-w-[310px] xl:max-w-[340px] 2xl:max-w-[365px] pr-3 sm:pr-4 pt-3 sm:pt-4">
               
               {/* Large faint decorative background letterform */}
               <span
                 aria-hidden="true"
-                className="absolute -top-10 -left-6 sm:-top-16 sm:-left-12 font-heading text-[160px] sm:text-[220px] lg:text-[280px] leading-none text-norse/10 select-none pointer-events-none z-0"
+                className="absolute -top-10 -left-6 sm:-top-14 sm:-left-10 font-heading text-[150px] sm:text-[200px] lg:text-[250px] leading-none text-norse/10 select-none pointer-events-none z-0"
               >
                 M
               </span>
@@ -164,7 +164,7 @@ export default function Hero() {
                       src={profileImg}
                       alt="Manuth Wilegoda - Computer Science Undergraduate"
                       onError={() => setImgError(true)}
-                      className="h-full w-full object-cover object-top origin-top grayscale contrast-105 hover:grayscale-0 scale-100 group-hover:scale-[1.025] transition-all duration-700 ease-out"
+                      className="h-full w-full object-cover object-[center_20%] origin-top grayscale contrast-105 hover:grayscale-0 scale-100 group-hover:scale-[1.025] transition-all duration-700 ease-out"
                     />
                   ) : (
                     /* Fallback placeholder if image load fails */
@@ -195,7 +195,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom Row / Scroll Indicator & System Index */}
-      <div className="order-6 w-full border-t border-norse/25 pt-4">
+      <div className="order-6 w-full border-t border-norse/25 pt-3 sm:pt-4">
         <div className="flex items-center justify-between font-mono text-xs uppercase tracking-widest text-norse">
           <a
             href="#about"
