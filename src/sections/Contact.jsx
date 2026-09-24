@@ -3,7 +3,7 @@ export default function Contact() {
     <footer
       id="contact"
       aria-label="Contact and Publication Colophon"
-      className="relative px-4 sm:px-8 lg:px-12 pt-16 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 bg-poseidon overflow-hidden"
+      className="relative px-4 sm:px-8 lg:px-12 pt-16 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 bg-poseidon overflow-hidden scroll-mt-16 sm:scroll-mt-20"
     >
       {/* Editorial registration cross marks */}
       <span aria-hidden="true" className="absolute top-3 left-3 select-none font-mono text-xs text-norse/30">
@@ -140,7 +140,7 @@ export default function Contact() {
             <div className="flex items-center gap-4 text-paper/85">
               <span className="font-semibold text-paper">MANUTH WILEGODA</span>
               <span className="select-none text-norse/40">/</span>
-              <span>© 2026</span>
+              <span></span>
             </div>
 
             <div className="text-[11px] text-norse/70">

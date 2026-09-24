@@ -31,7 +31,7 @@ export default function Hero() {
             <span className="inline-block h-2 w-2 bg-pumpkin"></span>
             <span className="font-semibold text-paper/90">01 / INTRO</span>
             <span className="text-norse/40 select-none">|</span>
-            <span>MW // 2026</span>
+            <span></span>
           </div>
 
           <div className="flex items-center gap-4 text-norse/70 anim-fade">

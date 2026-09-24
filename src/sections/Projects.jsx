@@ -8,7 +8,7 @@ export default function Projects() {
     <section
       id="work"
       aria-label="Selected Projects"
-      className="relative border-b border-norse/30 px-4 sm:px-8 lg:px-12 py-16 sm:py-24 bg-poseidon overflow-hidden"
+      className="relative border-b border-norse/30 px-4 sm:px-8 lg:px-12 py-16 sm:py-24 bg-poseidon overflow-hidden scroll-mt-16 sm:scroll-mt-20"
     >
       {/* Editorial registration cross marks */}
       <span aria-hidden="true" className="absolute top-3 left-3 select-none font-mono text-xs text-norse/30">

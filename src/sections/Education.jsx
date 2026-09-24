@@ -3,7 +3,7 @@ export default function Education() {
     <section
       id="education"
       aria-label="Academic Background & Education"
-      className="relative border-b border-norse/30 px-4 sm:px-8 lg:px-12 py-16 sm:py-24 bg-poseidon overflow-hidden"
+      className="relative border-b border-norse/30 px-4 sm:px-8 lg:px-12 py-16 sm:py-24 bg-poseidon overflow-hidden scroll-mt-16 sm:scroll-mt-20"
     >
       {/* Editorial registration cross marks in corners */}
       <span aria-hidden="true" className="absolute top-3 left-3 select-none font-mono text-xs text-norse/30">
@@ -109,9 +109,6 @@ export default function Education() {
                 <div className="border border-pumpkin/60 bg-pumpkin/10 px-4 py-2 text-center lg:text-right">
                   <span className="font-heading text-3xl sm:text-4xl text-pumpkin tracking-tight block leading-none select-none">
                     9 A&apos;S
-                  </span>
-                  <span className="font-mono text-[10px] text-paper/70 uppercase tracking-wider block mt-1">
-                    9 DISTINCTIONS
                   </span>
                 </div>
               </div>
@@ -257,7 +254,7 @@ export default function Education() {
                     </span>
                   </div>
                   <span className="font-mono text-[10px] text-norse tracking-widest uppercase block mt-1">
-                    COMP. SCI. CANDIDATE
+                    COMPUTER SCIENCE
                   </span>
                 </div>
               </div>
