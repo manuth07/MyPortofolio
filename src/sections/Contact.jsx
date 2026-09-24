@@ -106,6 +106,21 @@ export default function Contact() {
                 </span>
               </a>
 
+              {/* CV Download Link */}
+              {/* CV file expected at: public/Manuth_Wilegoda_CV.pdf */}
+              <a
+                href="/Manuth_Wilegoda_CV.pdf"
+                download="Manuth_Wilegoda_CV.pdf"
+                className="group flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 border-b border-norse/25 py-4 transition-colors hover:border-pumpkin focus-visible:outline-2 focus-visible:outline-pumpkin focus-visible:outline-offset-2"
+              >
+                <span className="font-mono text-xs uppercase tracking-widest text-norse group-hover:text-pumpkin transition-colors">
+                  DOWNLOAD CV <span aria-hidden="true" className="text-pumpkin">↘</span>
+                </span>
+                <span className="font-mono text-xs sm:text-sm text-paper group-hover:text-pumpkin transition-colors">
+                  Manuth_Wilegoda_CV.pdf
+                </span>
+              </a>
+
               {/* Phone (Subtle Presentation) */}
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 pt-4 text-xs font-mono text-norse/70">
                 <span className="text-[10px] uppercase tracking-widest text-norse/50">
@@ -140,7 +155,7 @@ export default function Contact() {
             <div className="flex items-center gap-4 text-paper/85">
               <span className="font-semibold text-paper">MANUTH WILEGODA</span>
               <span className="select-none text-norse/40">/</span>
-              <span></span>
+              <span>© ALL RIGHTS RESERVED</span>
             </div>
 
             <div className="text-[11px] text-norse/70">
