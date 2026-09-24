@@ -133,7 +133,7 @@ export default function Education() {
                   </span>
                 </div>
                 <div className="font-mono text-xs text-norse/60 tracking-wider lg:mt-2">
-                  <span>ADVANCED LEVEL</span>
+                  <span>2020-2022</span>
                 </div>
               </div>
 
