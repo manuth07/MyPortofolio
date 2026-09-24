@@ -54,7 +54,7 @@ export default function Hero() {
             
             {/* 1. Name */}
             <div className="order-1 anim-entrance">
-              <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-[6.75rem] xl:text-[7.5rem] tracking-tight text-pumpkin uppercase leading-[0.86] select-none">
+              <h1 className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[6.75rem] xl:text-[7.5rem] tracking-tight text-pumpkin uppercase leading-[0.86] select-none">
                 MANUTH<br />WILEGODA
               </h1>
             </div>
@@ -122,34 +122,34 @@ export default function Hero() {
               RIGHT COLUMN / PORTRAIT (42% / 5 cols on desktop, order-4 on mobile)
              ======================================================== */}
           <div className="order-4 mt-10 lg:mt-0 lg:col-span-5 anim-fade anim-delay-2">
-            <div className="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
+            <div className="group relative mx-auto w-full max-w-[310px] sm:max-w-md lg:max-w-none pr-3 sm:pr-4 pt-3 sm:pt-4">
               
               {/* Large faint decorative background letterform */}
               <span
                 aria-hidden="true"
-                className="absolute -top-12 -left-8 sm:-top-16 sm:-left-12 font-heading text-[160px] sm:text-[220px] lg:text-[280px] leading-none text-norse/10 select-none pointer-events-none z-0"
+                className="absolute -top-10 -left-6 sm:-top-16 sm:-left-12 font-heading text-[160px] sm:text-[220px] lg:text-[280px] leading-none text-norse/10 select-none pointer-events-none z-0"
               >
                 M
               </span>
 
-              {/* Offset industrial backing frame */}
+              {/* Offset industrial backing frame with subtle hover shift */}
               <div
                 aria-hidden="true"
-                className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 w-full h-full border border-norse/35 rounded-tr-[70px] sm:rounded-tr-[90px] rounded-bl-[35px] sm:rounded-bl-[45px] pointer-events-none z-0"
+                className="absolute top-0 right-0 w-[calc(100%-12px)] sm:w-[calc(100%-16px)] h-[calc(100%-12px)] sm:h-[calc(100%-16px)] border border-norse/35 rounded-tr-[70px] sm:rounded-tr-[90px] rounded-bl-[35px] sm:rounded-bl-[45px] pointer-events-none z-0 transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
               />
 
               {/* Decorative accent geometry */}
               <div
                 aria-hidden="true"
-                className="absolute -top-1.5 -left-1.5 h-3 w-3 bg-pumpkin z-20"
+                className="absolute top-1.5 left-1.5 h-3 w-3 bg-pumpkin z-20 transition-transform duration-300 group-hover:scale-125"
               />
               <div
                 aria-hidden="true"
-                className="absolute -bottom-1.5 -right-1.5 h-3 w-3 bg-norse z-20"
+                className="absolute bottom-1.5 right-1.5 h-3 w-3 bg-norse z-20 transition-transform duration-300 group-hover:scale-125"
               />
 
               {/* Technical crop frame */}
-              <div className="relative z-10 overflow-hidden border border-norse/50 bg-poseidon rounded-tr-[70px] sm:rounded-tr-[90px] rounded-bl-[35px] sm:rounded-bl-[45px]">
+              <div className="relative z-10 overflow-hidden border border-norse/50 bg-poseidon rounded-tr-[70px] sm:rounded-tr-[90px] rounded-bl-[35px] sm:rounded-bl-[45px] transition-colors duration-300 group-hover:border-norse">
                 
                 {/* Upper technical header strip */}
                 <div className="flex items-center justify-between border-b border-norse/30 bg-poseidon/90 px-3 py-1.5 font-mono text-[10px] uppercase tracking-widest text-norse">
@@ -157,14 +157,14 @@ export default function Hero() {
                   <span>ASPECT 4:5</span>
                 </div>
 
-                {/* Portrait Image container */}
-                <div className="relative aspect-[4/5] w-full bg-poseidon">
+                {/* Portrait Image container with subtle hover movement */}
+                <div className="relative aspect-[4/5] w-full bg-poseidon overflow-hidden">
                   {!imgError ? (
                     <img
                       src={profileImg}
                       alt="Manuth Wilegoda - Computer Science Undergraduate"
                       onError={() => setImgError(true)}
-                      className="h-full w-full object-cover object-center grayscale contrast-105 hover:grayscale-0 transition-[filter] duration-500"
+                      className="h-full w-full object-cover object-center grayscale contrast-105 hover:grayscale-0 scale-100 group-hover:scale-[1.03] transition-all duration-700 ease-out"
                     />
                   ) : (
                     /* Fallback placeholder if image load fails */

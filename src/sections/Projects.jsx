@@ -46,7 +46,7 @@ export default function Projects() {
             <span className="block font-mono text-xs tracking-widest text-norse uppercase mb-2">
               [ SEC. 03 // ARCHIVE ]
             </span>
-            <h2 className="font-heading text-6xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-pumpkin leading-[0.88] select-none">
+            <h2 className="font-heading text-5xl sm:text-7xl lg:text-8xl uppercase tracking-tight text-pumpkin leading-[0.88] select-none">
               SELECTED<br className="hidden sm:inline" /> PROJECTS
             </h2>
           </div>
