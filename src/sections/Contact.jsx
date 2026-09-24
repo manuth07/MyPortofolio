@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-norse/25 pb-4 font-mono text-xs uppercase tracking-wider text-norse">
           <div className="flex items-center gap-3">
             <span className="inline-block h-2 w-2 bg-pumpkin"></span>
-            <span className="font-semibold text-paper/90">04 // TRANSMISSION</span>
+            <span className="font-semibold text-paper/90">05 // TRANSMISSION</span>
             <span className="text-norse/40 select-none">|</span>
             <span>DIRECT CHANNELS</span>
           </div>

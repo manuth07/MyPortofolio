@@ -1,10 +1,21 @@
+import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
+import Education from './sections/Education'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 
 function App() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const el = document.querySelector(window.location.hash)
+      if (el) {
+        el.scrollIntoView({ behavior: 'instant' })
+      }
+    }
+  }, [])
+
   return (
     <div className="min-h-screen bg-poseidon text-paper flex flex-col selection:bg-pumpkin selection:text-paper">
       {/* Skip to content link for accessibility */}
@@ -20,6 +31,7 @@ function App() {
       <main id="main-content" className="flex-1">
         <Hero />
         <About />
+        <Education />
         <Projects />
       </main>
 
