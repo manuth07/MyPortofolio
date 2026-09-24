@@ -164,7 +164,7 @@ export default function Hero() {
                       src={profileImg}
                       alt="Manuth Wilegoda - Computer Science Undergraduate"
                       onError={() => setImgError(true)}
-                      className="h-full w-full object-cover object-center grayscale contrast-105 hover:grayscale-0 scale-100 group-hover:scale-[1.03] transition-all duration-700 ease-out"
+                      className="h-full w-full object-cover object-top origin-top grayscale contrast-105 hover:grayscale-0 scale-100 group-hover:scale-[1.025] transition-all duration-700 ease-out"
                     />
                   ) : (
                     /* Fallback placeholder if image load fails */

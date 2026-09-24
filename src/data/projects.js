@@ -5,7 +5,7 @@ export const projects = [
     title: 'EventPulse',
     subtitle: 'Event Ticketing Platform',
     featured: true,
-    technologies: ['ASP.NET Core', 'C#', 'React', 'PostgreSQL', 'Azure', 'Jira'],
+    technologies: ['ASP.NET Core', 'C#', 'React', 'PostgreSQL','Github Actions', 'Azure', 'Jira'],
     github: 'https://github.com/manuth07/EventPulse',
     description:
       'Developed a microservices-based event discovery and ticket selling platform with separate Identity, Event, Booking and Payment services connected through a YARP API gateway. Built event submission and approval workflows using ASP.NET Core APIs, PostgreSQL and a React frontend, and deployed the application to Azure. Worked in Jira-managed sprints to develop features, test workflows and track defects.',
